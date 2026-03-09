@@ -1,0 +1,10 @@
+{
+  "name": "cnc-calm-curious-minds",
+  "version": "1.0.0",
+  "description": "C&C luxury shopping platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

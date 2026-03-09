@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C&C – Calm & Curious Minds</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="/logo.svg" alt="C&C Logo" class="logo"/>
+    <nav>
+      <button data-view="home">Home</button>
+      <button data-view="limited">Limited Drops</button>
+      <button data-view="cart">Cart <span id="cartCount">0</span></button>
+      <button data-view="wishlist">Wishlist</button>
+      <button id="authBtn">Login</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>C&C — Calm & Curious Minds</h1>
+    <p>Luxury fashion at discounted prices with curated limited editions.</p>
+  </section>
+
+  <section>
+    <h2>Featured Brands</h2>
+    <div id="brandGrid" class="brand-grid"></div>
+  </section>
+
+  <section>
+    <h2>Explore Collections (Under 10 in stock)</h2>
+    <div id="productGrid" class="grid"></div>
+  </section>
+
+  <section id="limitedSection">
+    <h2>Limited Drops (Only 1 each)</h2>
+    <div id="limitedGrid" class="grid"></div>
+  </section>
+
+  <div id="productModal" class="modal hidden"></div>
+  <div id="authModal" class="modal hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
