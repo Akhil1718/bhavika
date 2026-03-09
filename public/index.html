@@ -7,40 +7,52 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="/logo.svg" alt="C&C Logo" class="logo"/>
-    <nav>
-      <button data-view="home">Home</button>
-      <button data-view="limited">Limited Drops</button>
-      <button data-view="cart">Cart <span id="cartCount">0</span></button>
-      <button data-view="wishlist">Wishlist</button>
-      <button id="authBtn">Login</button>
+  <header class="topbar">
+    <div class="brand-left">
+      <img src="/logo.svg" alt="C&C Logo" class="logo"/>
+      <div>
+        <p class="tiny">CALM & CURIOUS MINDS</p>
+        <h1>C&C</h1>
+      </div>
+    </div>
+    <nav class="menu">
+      <button data-view="home">HOME</button>
+      <button data-view="limited">LIMITED</button>
+      <button data-view="wishlist">WISHLIST</button>
+      <button data-view="cart">CART <span id="cartCount">0</span></button>
+      <button id="authBtn">LOGIN</button>
+      <button id="logoutBtn" class="hidden">LOGOUT</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>C&C — Calm & Curious Minds</h1>
-    <p>Luxury fashion at discounted prices with curated limited editions.</p>
-  </section>
+  <main id="homeView" class="container">
+    <section class="hero">
+      <h2>Luxury fashion, reduced with intention.</h2>
+      <p>Discover discounted icons and one-piece limited drops in a modern monochrome gallery.</p>
+    </section>
 
-  <section>
-    <h2>Featured Brands</h2>
-    <div id="brandGrid" class="brand-grid"></div>
-  </section>
+    <section class="section-title-row">
+      <h3>Featured Brands</h3>
+      <p>Click any brand to view all related products.</p>
+    </section>
+    <section id="brandGrid" class="brand-grid"></section>
 
-  <section>
-    <h2>Explore Collections (Under 10 in stock)</h2>
-    <div id="productGrid" class="grid"></div>
-  </section>
+    <section class="section-title-row">
+      <h3>Explore Collections</h3>
+      <p>Only showing products with stock under 10.</p>
+    </section>
+    <section id="productGrid" class="product-grid"></section>
 
-  <section id="limitedSection">
-    <h2>Limited Drops (Only 1 each)</h2>
-    <div id="limitedGrid" class="grid"></div>
-  </section>
+    <section id="limitedSection" class="section-title-row">
+      <h3>Limited Drops</h3>
+      <p>Single quantity release items only.</p>
+    </section>
+    <section id="limitedGrid" class="product-grid"></section>
+  </main>
 
-  <div id="productModal" class="modal hidden"></div>
-  <div id="authModal" class="modal hidden"></div>
+  <main id="productView" class="product-page hidden"></main>
 
+  <div id="overlayModal" class="overlay hidden"></div>
   <script src="script.js"></script>
 </body>
 </html>
