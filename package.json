@@ -1,10 +1,10 @@
 {
-  "name": "cnc-luxury-store",
-  "version": "2.0.0",
-  "private": true,
-  "description": "C&C – Calm & Curious Minds luxury shopping website",
+  "name": "cnc-calm-curious-minds",
+  "version": "1.0.0",
+  "description": "C&C luxury shopping platform",
+  "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   }
 }
